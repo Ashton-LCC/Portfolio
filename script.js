@@ -1,5 +1,34 @@
-function getBotResponse(question) {
+// =========================
+// CHATBOT
+// =========================
 
+function addMessage(text, sender) {
+    const chatMessages = document.getElementById("chatMessages");
+
+    if (!chatMessages) {
+        console.error("chatMessages element was not found.");
+        return;
+    }
+
+    const message = document.createElement("div");
+
+    message.classList.add("message");
+
+    if (sender === "user") {
+        message.classList.add("user-message");
+    } else {
+        message.classList.add("bot-message");
+    }
+
+    message.textContent = text;
+
+    chatMessages.appendChild(message);
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+
+function getBotResponse(question) {
     const q = question.toLowerCase();
 
     if (
@@ -47,4 +76,126 @@ function getBotResponse(question) {
     }
 
     return "[SYSTEM] Information unavailable. Try asking about skills, projects, education, or contact information.";
+}
+
+
+function sendMessage() {
+    const input = document.getElementById("userInput");
+
+    if (!input) {
+        console.error("userInput element was not found.");
+        return;
+    }
+
+    const question = input.value.trim();
+
+    if (question === "") {
+        return;
+    }
+
+    addMessage(question, "user");
+
+    input.value = "";
+
+    setTimeout(function () {
+        const response = getBotResponse(question);
+        addMessage(response, "bot");
+    }, 400);
+}
+
+
+function askQuestion(question) {
+    const input = document.getElementById("userInput");
+
+    if (!input) {
+        console.error("userInput element was not found.");
+        return;
+    }
+
+    input.value = question;
+
+    sendMessage();
+}
+
+
+function handleEnter(event) {
+    if (event.key === "Enter") {
+        sendMessage();
+    }
+}
+
+
+// =========================
+// MOBILE MENU
+// =========================
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+
+    navLinks.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("active");
+        });
+    });
+}
+
+
+// =========================
+// THEME TOGGLE
+// =========================
+
+const themeToggle = document.getElementById("themeToggle");
+
+if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("light-mode");
+
+        if (document.body.classList.contains("light-mode")) {
+            localStorage.setItem("theme", "light");
+            themeToggle.textContent = "🌙";
+        } else {
+            localStorage.setItem("theme", "dark");
+            themeToggle.textContent = "☀️";
+        }
+    });
+
+    if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+        themeToggle.textContent = "🌙";
+    }
+}
+
+
+// =========================
+// CONTACT FORM
+// =========================
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        alert("SYSTEM MESSAGE: Your message has been transmitted successfully.");
+
+        contactForm.reset();
+    });
+}
+
+
+// =========================
+// SOCIAL LINKS
+// =========================
+
+function comingSoon(event) {
+    if (event) {
+        event.preventDefault();
+    }
+
+    alert("SYSTEM MESSAGE: This connection is not available yet.");
 }
