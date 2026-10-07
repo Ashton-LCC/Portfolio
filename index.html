@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ashton Kniel T. Casillano | Portfolio</title>
+    <meta
+        name="description"
+        content="Ashton Kniel T. Casillano - Computer Science Student Portfolio">
+
+    <title>Ashton Kniel T. Casillano | Developer Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
+    <!-- =====================================================
          BACKGROUND
-    ========================== -->
+    ====================================================== -->
 
     <div class="stars"></div>
-    <div class="stars stars-two"></div>
+    <div class="grid-background"></div>
 
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
 
-    <header>
+    <header class="navbar-wrapper">
+
         <nav class="navbar">
 
             <a href="#home" class="logo">
@@ -44,7 +50,11 @@
                 </li>
 
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#lab">Lab</a>
                 </li>
 
                 <li>
@@ -52,11 +62,7 @@
                 </li>
 
                 <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#chatbot">Ask Me</a>
+                    <a href="#learning">Learning</a>
                 </li>
 
                 <li>
@@ -66,692 +72,599 @@
             </ul>
 
             <button
-                id="themeToggle"
                 class="theme-btn"
-                type="button"
-                title="Toggle theme">
+                id="themeToggle"
+                type="button">
                 ☀️
             </button>
 
         </nav>
+
     </header>
 
 
-    <!-- =========================
-         HOME
-    ========================== -->
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
 
-    <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <p class="small-title">
-                ◈ SCENARIO #001 — THE PORTFOLIO
-            </p>
-
-            <h1>
-                Hi, I'm
-                <span>Ashton</span>
-            </h1>
-
-            <h2>
-                Computer Science Student
-            </h2>
-
-            <p class="hero-description">
-                I'm a Computer Science student who enjoys exploring
-                programming, web development, databases, and technology.
-                I'm constantly learning new things and building my skills
-                one project at a time.
-            </p>
-
-            <div class="hero-status">
-
-                <span>
-                    STATUS:
-                    <strong>ACTIVE</strong>
-                </span>
-
-                <span>
-                    CLASS:
-                    <strong>STUDENT</strong>
-                </span>
-
-                <span>
-                    LEVEL:
-                    <strong>01</strong>
-                </span>
-
-            </div>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="primary-btn">
-                    ENTER SCENARIO →
-                </a>
-
-                <a href="#contact" class="secondary-btn">
-                    CONTACT ME
-                </a>
-
-            </div>
-
-        </div>
+    <main>
 
 
-        <!-- PROFILE -->
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
-        <div class="hero-image">
+        <section id="home" class="hero">
 
-            <div class="orbit orbit-one"></div>
+            <div class="hero-content">
 
-            <div class="orbit orbit-two"></div>
+                <p class="system-label">
+                    SCENARIO #001 // PORTFOLIO
+                </p>
 
-            <div class="planet-glow"></div>
+                <div class="availability">
 
-            <div class="profile-system">
+                    <span class="status-dot"></span>
 
-                <span class="system-corner top-left"></span>
-                <span class="system-corner top-right"></span>
-                <span class="system-corner bottom-left"></span>
-                <span class="system-corner bottom-right"></span>
+                    CURRENTLY STUDYING & BUILDING
 
-                <img
-                    src="profile.jpg"
-                    alt="Ashton Kniel T. Casillano"
-                    class="profile-image">
-
-            </div>
-
-            <div class="level-display">
-                <span>LEVEL</span>
-                <strong>01</strong>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section id="about" class="section">
-
-        <div class="section-title">
-
-            <p>
-                SCENARIO 01 — INFORMATION
-            </p>
-
-            <h2>
-                My Journey
-            </h2>
-
-        </div>
-
-
-        <div class="about-container">
-
-
-            <!-- WHO AM I -->
-
-            <div class="about-card">
-
-                <div class="card-icon">
-                    ◈
                 </div>
 
-                <span class="card-label">
-                    INFORMATION
-                </span>
 
-                <h3>
-                    Who Am I?
-                </h3>
+                <h1>
 
-                <p>
-                    I am Ashton Kniel T. Casillano, a Computer Science
-                    student interested in programming and technology.
-                    I enjoy discovering how software works and creating
-                    projects that allow me to apply what I learn.
-                </p>
-
-                <p>
-                    My journey in Computer Science is still developing,
-                    and every project gives me an opportunity to improve
-                    my problem-solving and programming skills.
-                </p>
-
-            </div>
-
-
-            <!-- EDUCATION -->
-
-            <div class="about-card">
-
-                <div class="card-icon">
-                    ◇
-                </div>
-
-                <span class="card-label">
-                    BACKGROUND
-                </span>
-
-                <h3>
-                    Education
-                </h3>
-
-                <p>
-                    I am currently pursuing my studies in Computer Science,
-                    where I am learning the fundamentals of programming,
-                    databases, web development, and software development.
-                </p>
-
-                <p>
-                    I continue to explore different technologies while
-                    developing practical skills through school activities
-                    and personal projects.
-                </p>
-
-            </div>
-
-
-            <!-- ACHIEVEMENTS -->
-
-            <div class="about-card">
-
-                <div class="card-icon">
-                    ✦
-                </div>
-
-                <span class="card-label">
-                    RECORD
-                </span>
-
-                <h3>
-                    Achievements
-                </h3>
-
-                <p>
-                    I'm still making my way there. For now, my biggest
-                    achievement is continuing to learn, improve my skills,
-                    and take on new challenges as I progress through my
-                    Computer Science journey.
-                </p>
-
-                <p>
-                    Every project and new skill is another step toward
-                    achieving bigger goals in the future.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         SKILLS
-    ========================== -->
-
-    <section id="skills" class="section skills-section">
-
-        <div class="section-title">
-
-            <p>
-                SCENARIO 02 — ATTRIBUTES
-            </p>
-
-            <h2>
-                My Skills
-            </h2>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    01
-                </span>
-
-                <div class="skill-icon">
-                    PHP
-                </div>
-
-                <h3>
-                    PHP
-                </h3>
-
-                <p>
-                    Backend web development
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    02
-                </span>
-
-                <div class="skill-icon">
-                    JS
-                </div>
-
-                <h3>
-                    JavaScript
-                </h3>
-
-                <p>
-                    Interactive web experiences
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    03
-                </span>
-
-                <div class="skill-icon">
-                    DB
-                </div>
-
-                <h3>
-                    MySQL
-                </h3>
-
-                <p>
-                    Database management
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    04
-                </span>
-
-                <div class="skill-icon">
-                    HTML
-                </div>
-
-                <h3>
-                    HTML
-                </h3>
-
-                <p>
-                    Web page structure
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    05
-                </span>
-
-                <div class="skill-icon">
-                    PY
-                </div>
-
-                <h3>
-                    Python
-                </h3>
-
-                <p>
-                    Programming and problem solving
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    06
-                </span>
-
-                <div class="skill-icon">
-                    CSS
-                </div>
-
-                <h3>
-                    CSS
-                </h3>
-
-                <p>
-                    Modern web design
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECTS
-    ========================== -->
-
-    <section id="projects" class="section">
-
-        <div class="section-title">
-
-            <p>
-                SCENARIO 03 — RECORDS
-            </p>
-
-            <h2>
-                My Projects
-            </h2>
-
-        </div>
-
-
-        <div class="projects-container">
-
-
-            <!-- PROJECT 1 -->
-
-<article class="project-card">
-
-    <div class="project-image project-one">
-
-        <span>
-            ◈
-        </span>
-
-    </div>
-
-    <div class="project-content">
-
-        <span class="project-label">
-            WEB DEVELOPMENT
-        </span>
-
-        <h3>
-            Payroll System
-        </h3>
-
-        <p>
-            A payroll management system designed to manage employee information,
-            calculate salaries, and organize payroll records efficiently.
-        </p>
-
-        <div class="project-tech">
-
-            <span>
-                HTML
-            </span>
-
-            <span>
-                CSS
-            </span>
-
-            <span>
-                JavaScript
-            </span>
-
-        </div>
-
-    </div>
-
-</article>
-
-
-            <!-- PROJECT 2 -->
-
-            <article class="project-card">
-
-                <div class="project-image project-two">
+                    Hi, I'm
 
                     <span>
-                        ◇
+                        Ashton
                     </span>
+
+                </h1>
+
+
+                <h2>
+                    Computer Science Student
+                </h2>
+
+
+                <p class="hero-description">
+
+                    I’m currently studying Computer Science and
+                    building projects to strengthen my skills in
+                    programming, web development, databases, and
+                    software development.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#projects"
+                        class="btn primary-btn">
+
+                        EXPLORE MY WORK
+                        <span>→</span>
+
+                    </a>
+
+                    <a
+                        href="#lab"
+                        class="btn secondary-btn">
+
+                        TRY THE LAB
+
+                    </a>
 
                 </div>
 
-                <div class="project-content">
 
-                    <span class="project-label">
-                        DATABASE SYSTEM
-                    </span>
+                <div class="hero-stats">
 
-                    <h3>
-                        Student Records System
-                    </h3>
+                    <div>
 
-                    <p>
-                        A student information system created to organize
-                        student records and make basic academic information
-                        easier to manage and access.
-                    </p>
-
-                    <div class="project-tech">
+                        <strong>
+                            02
+                        </strong>
 
                         <span>
-                            PHP
+                            PROJECTS
                         </span>
 
-                        <span>
-                            MySQL
-                        </span>
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            06
+                        </strong>
 
                         <span>
-                            HTML
+                            TECHNOLOGIES
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>
+                            01
+                        </strong>
+
+                        <span>
+                            INTERACTIVE LAB
                         </span>
 
                     </div>
 
                 </div>
 
-            </article>
-
-        </div>
-
-    </section>
+            </div>
 
 
-    <!-- =========================
-         CHATBOT
-    ========================== -->
+            <!-- HERO VISUAL -->
 
-    <section
-        id="chatbot"
-        class="section chatbot-section">
+            <div class="hero-visual">
 
-        <div class="section-title">
+                <div class="scan-line"></div>
 
-            <p>
-                SCENARIO 04 — INFORMATION SYSTEM
-            </p>
+                <div class="profile-frame">
 
-            <h2>
-                Ask About Me
-            </h2>
+                    <div class="corner top-left"></div>
+                    <div class="corner top-right"></div>
+                    <div class="corner bottom-left"></div>
+                    <div class="corner bottom-right"></div>
 
-        </div>
+                    <img
+                        src="profile.png"
+                        alt="Ashton Kniel T. Casillano">
 
-
-        <div class="chatbot">
-
-
-            <!-- CHAT HEADER -->
-
-            <div class="chat-header">
-
-                <div class="bot-avatar">
-                    ◈
                 </div>
+
+
+                <div class="profile-status">
+
+                    <span>
+                        PROFILE
+                    </span>
+
+                    <strong>
+                        STUDENT_DEVELOPER
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             QUICK STATS
+        ================================================== -->
+
+        <section class="system-overview">
+
+            <div class="overview-card">
+
+                <span>
+                    01
+                </span>
+
+                <strong>
+                    BUILD
+                </strong>
+
+                <p>
+                    Creating school and personal projects.
+                </p>
+
+            </div>
+
+
+            <div class="overview-card">
+
+                <span>
+                    02
+                </span>
+
+                <strong>
+                    PRACTICE
+                </strong>
+
+                <p>
+                    Applying programming concepts through code.
+                </p>
+
+            </div>
+
+
+            <div class="overview-card">
+
+                <span>
+                    03
+                </span>
+
+                <strong>
+                    IMPROVE
+                </strong>
+
+                <p>
+                    Learning from mistakes and improving each project.
+                </p>
+
+            </div>
+
+
+            <div class="overview-card">
+
+                <span>
+                    04
+                </span>
+
+                <strong>
+                    EXPLORE
+                </strong>
+
+                <p>
+                    Discovering which areas of technology interest me.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
+
+        <section
+            id="projects"
+            class="section">
+
+            <div class="section-heading">
 
                 <div>
 
-                    <h3>
-                        Ashton's Assistant
-                    </h3>
+                    <p class="section-label">
+                        SCENARIO #002 // PROJECT RECORDS
+                    </p>
 
-                    <span>
-                        <i></i>
-                        Online
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <!-- MESSAGES -->
-
-            <div
-                class="chat-messages"
-                id="chatMessages">
-
-                <div class="message bot-message">
-
-                    SYSTEM MESSAGE:
-
-                    <br><br>
-
-                    Welcome, Incarnation.
-
-                    <br><br>
-
-                    Ask me something about Ashton,
-                    his skills, projects, education,
-                    achievements, or contact information.
+                    <h2>
+                        Things I've
+                        <span>Built.</span>
+                    </h2>
 
                 </div>
 
-            </div>
+                <p class="section-description">
 
+                    These projects come from my Computer Science
+                    studies and give me opportunities to practice
+                    programming, databases, and web development.
 
-            <!-- QUICK QUESTIONS -->
-
-            <div class="quick-questions">
-
-                <button
-                    type="button"
-                    onclick="askQuestion('Who are you?')">
-
-                    Who are you?
-
-                </button>
-
-
-                <button
-                    type="button"
-                    onclick="askQuestion('What are your skills?')">
-
-                    Your skills?
-
-                </button>
-
-
-                <button
-                    type="button"
-                    onclick="askQuestion('What projects have you made?')">
-
-                    Your projects?
-
-                </button>
+                </p>
 
             </div>
 
 
-            <!-- INPUT -->
+            <div class="projects-grid">
 
-            <div class="chat-input">
 
-                <input
-                    type="text"
-                    id="userInput"
-                    placeholder="Enter your query..."
-                    onkeypress="handleEnter(event)"
-                    autocomplete="off">
+                <!-- PAYROLL -->
 
-                <button
-                    type="button"
-                    onclick="sendMessage()">
+                <article class="project-card">
 
-                    ➤
+                    <div class="project-image payroll-image">
 
-                </button>
+                        <div class="project-screen">
+
+                            <div class="screen-header">
+
+                                <span>
+                                    PAYROLL_SYSTEM
+                                </span>
+
+                                <small>
+                                    ONLINE
+                                </small>
+
+                            </div>
+
+
+                            <div class="fake-table">
+
+                                <div>
+                                    <span>EMPLOYEE</span>
+                                    <span>SALARY</span>
+                                </div>
+
+                                <div>
+                                    <span>Employee 01</span>
+                                    <span>₱25,000</span>
+                                </div>
+
+                                <div>
+                                    <span>Employee 02</span>
+                                    <span>₱28,500</span>
+                                </div>
+
+                                <div>
+                                    <span>Employee 03</span>
+                                    <span>₱31,200</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="project-number">
+                            PROJECT_01
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-body">
+
+                        <div class="project-top">
+
+                            <span class="project-category">
+                                SCHOOL PROJECT
+                            </span>
+
+                            <span class="project-status">
+                                COMPLETED
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Payroll System
+                        </h3>
+
+
+                        <p>
+
+                            A system for managing employee
+                            information, calculating salaries,
+                            and organizing payroll records.
+
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <button
+                                class="project-btn"
+                                type="button"
+                                onclick="openProject('payroll')">
+
+                                VIEW DETAILS →
+
+                            </button>
+
+                            <a
+                                href="#"
+                                class="code-link"
+                                onclick="comingSoon(event)">
+
+                                SOURCE ↗
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- STUDENT RECORDS -->
+
+                <article class="project-card">
+
+                    <div class="project-image database-image">
+
+                        <div class="database-animation">
+
+                            <div class="db-core">
+                                DB
+                            </div>
+
+                            <span class="db-line line-one"></span>
+                            <span class="db-line line-two"></span>
+                            <span class="db-line line-three"></span>
+                            <span class="db-line line-four"></span>
+
+                        </div>
+
+
+                        <span class="project-number">
+                            PROJECT_02
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-body">
+
+                        <div class="project-top">
+
+                            <span class="project-category">
+                                SCHOOL PROJECT
+                            </span>
+
+                            <span class="project-status">
+                                COMPLETED
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Student Records System
+                        </h3>
+
+
+                        <p>
+
+                            A database-focused system for organizing,
+                            storing, and managing student information.
+
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>HTML</span>
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+                            <button
+                                class="project-btn"
+                                type="button"
+                                onclick="openProject('records')">
+
+                                VIEW DETAILS →
+
+                            </button>
+
+                            <a
+                                href="#"
+                                class="code-link"
+                                onclick="comingSoon(event)">
+
+                                SOURCE ↗
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================== -->
 
-    <section
-        id="contact"
-        class="section contact-section">
+        <!-- =================================================
+             PROJECT DETAIL MODAL
+        ================================================== -->
 
-        <div class="section-title">
+        <div
+            class="modal"
+            id="projectModal">
 
-            <p>
-                FINAL SCENARIO — CONNECTION
-            </p>
+            <div class="modal-box">
 
-            <h2>
-                Contact Me
-            </h2>
+                <button
+                    class="modal-close"
+                    type="button"
+                    onclick="closeProject()">
 
-        </div>
+                    ×
 
-
-        <div class="contact-container">
+                </button>
 
 
-            <!-- CONTACT INFORMATION -->
+                <p
+                    class="modal-label"
+                    id="modalLabel">
 
-            <div class="contact-info">
+                    PROJECT
 
-                <h3>
-                    Establish Connection
-                </h3>
-
-                <p>
-                    Have a question, idea, or just want to say hello?
-                    Send me a message and let's connect.
                 </p>
 
 
-                <div class="contact-item">
+                <h2 id="modalTitle">
+                    Project Title
+                </h2>
 
-                    <span>
-                        @
-                    </span>
+
+                <p
+                    class="modal-description"
+                    id="modalDescription">
+
+                    Project description.
+
+                </p>
+
+
+                <div class="modal-grid">
 
                     <div>
 
-                        <small>
-                            EMAIL
-                        </small>
+                        <span>
+                            PURPOSE
+                        </span>
 
-                        <p>
-                            trivinolebron@gmail.com
+                        <p id="modalPurpose">
+                            -
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            WHAT I PRACTICED
+                        </span>
+
+                        <p id="modalLearned">
+                            -
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            TECHNOLOGIES
+                        </span>
+
+                        <p id="modalTech">
+                            -
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            STATUS
+                        </span>
+
+                        <p id="modalStatus">
+                            -
                         </p>
 
                     </div>
@@ -759,97 +672,843 @@
                 </div>
 
 
-                <div class="social-links">
+                <div class="modal-note">
 
-                    <a
-                        href="https://www.facebook.com/share/1LRCNjifaZ/"
-                        target="_blank"
-                        rel="noopener noreferrer">
+                    <span>
+                        DEVELOPMENT NOTE
+                    </span>
 
-                        Facebook
-
-                    </a>
-
-
-                    <a
-                        href="#"
-                        onclick="comingSoon(event); return false;">
-
-                        GitHub
-
-                    </a>
-
-
-                    <a
-                        href="#"
-                        onclick="comingSoon(event); return false;">
-
-                        LinkedIn
-
-                    </a>
+                    <p id="modalNote">
+                        -
+                    </p>
 
                 </div>
 
             </div>
 
-
-            <!-- CONTACT FORM -->
-
-            <div class="contact-form-container">
-
-                <form id="contactForm">
+        </div>
 
 
-                    <div class="form-group">
 
-                        <label for="name">
-                            YOUR NAME
-                        </label>
+        <!-- =================================================
+             INTERACTIVE LAB
+        ================================================== -->
+
+        <section
+            id="lab"
+            class="section lab-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        SCENARIO #003 // INTERACTIVE LAB
+                    </p>
+
+                    <h2>
+                        Test My
+                        <span>Code.</span>
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+
+                    A small interactive demonstration of
+                    search algorithms I have been practicing
+                    in Python.
+
+                </p>
+
+            </div>
+
+
+            <div class="lab-container">
+
+
+                <div class="lab-info">
+
+                    <p class="lab-label">
+                        SEARCH ALGORITHM VISUALIZER
+                    </p>
+
+                    <h3>
+                        Linear vs Binary Search
+                    </h3>
+
+                    <p>
+
+                        Enter a number and compare how linear
+                        search and binary search approach the
+                        same problem.
+
+                    </p>
+
+
+                    <div class="lab-rules">
+
+                        <div>
+
+                            <span>
+                                LINEAR
+                            </span>
+
+                            <p>
+                                Checks items one by one.
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                BINARY
+                            </span>
+
+                            <p>
+                                Repeatedly divides a sorted list.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="search-lab">
+
+                    <div class="number-list" id="numberList">
+
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+
+                    </div>
+
+
+                    <div class="search-controls">
 
                         <input
-                            type="text"
-                            id="name"
-                            placeholder="Enter your name"
-                            required>
+                            type="number"
+                            id="searchNumber"
+                            min="1"
+                            max="8"
+                            placeholder="1 - 8">
+
+
+                        <button
+                            type="button"
+                            onclick="runSearch()">
+
+                            RUN SEARCH →
+
+                        </button>
 
                     </div>
 
 
-                    <div class="form-group">
+                    <div class="search-results">
 
-                        <label for="email">
-                            YOUR EMAIL
-                        </label>
+                        <div class="algorithm-result">
 
-                        <input
-                            type="email"
-                            id="email"
-                            placeholder="Enter your email"
-                            required>
+                            <span>
+                                LINEAR SEARCH
+                            </span>
+
+                            <strong id="linearResult">
+                                WAITING
+                            </strong>
+
+                        </div>
+
+
+                        <div class="algorithm-result">
+
+                            <span>
+                                BINARY SEARCH
+                            </span>
+
+                            <strong id="binaryResult">
+                                WAITING
+                            </strong>
+
+                        </div>
 
                     </div>
 
 
-                    <div class="form-group">
+                    <div
+                        class="search-log"
+                        id="searchLog">
 
-                        <label for="message">
-                            MESSAGE
-                        </label>
-
-                        <textarea
-                            id="message"
-                            rows="5"
-                            placeholder="Write your message..."
-                            required></textarea>
+                        SYSTEM READY...
 
                     </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SKILLS
+        ================================================== -->
+
+        <section
+            id="skills"
+            class="section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        SCENARIO #004 // CURRENT ATTRIBUTES
+                    </p>
+
+                    <h2>
+                        Skills With
+                        <span>Evidence.</span>
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+
+                    Rather than only listing technologies,
+                    these are connected to things I've actually
+                    practiced or built.
+
+                </p>
+
+            </div>
+
+
+            <div class="skills-table">
+
+                <div class="skill-row skill-header">
+
+                    <span>
+                        TECHNOLOGY
+                    </span>
+
+                    <span>
+                        EXPERIENCE
+                    </span>
+
+                    <span>
+                        EVIDENCE
+                    </span>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <strong>
+                        HTML / CSS
+                    </strong>
+
+                    <span>
+                        Practicing
+                    </span>
+
+                    <p>
+                        Portfolio and web interfaces
+                    </p>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <strong>
+                        JavaScript
+                    </strong>
+
+                    <span>
+                        Practicing
+                    </span>
+
+                    <p>
+                        Chatbot, theme system, interactive UI
+                    </p>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <strong>
+                        PHP
+                    </strong>
+
+                    <span>
+                        Learning
+                    </span>
+
+                    <p>
+                        Student Records System
+                    </p>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <strong>
+                        MySQL
+                    </strong>
+
+                    <span>
+                        Learning
+                    </span>
+
+                    <p>
+                        Database-focused school project
+                    </p>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <strong>
+                        Python
+                    </strong>
+
+                    <span>
+                        Practicing
+                    </span>
+
+                    <p>
+                        Search algorithms and programming exercises
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             LEARNING LOG
+        ================================================== -->
+
+        <section
+            id="learning"
+            class="section learning-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        SCENARIO #005 // DEVELOPMENT LOG
+                    </p>
+
+                    <h2>
+                        Still
+                        <span>Learning.</span>
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+
+                    I'm treating my portfolio as a record of
+                    my progress, not just a collection of
+                    finished work.
+
+                </p>
+
+            </div>
+
+
+            <div class="learning-grid">
+
+
+                <article class="learning-card">
+
+                    <span class="log-number">
+                        LOG_01
+                    </span>
+
+                    <p class="log-status">
+                        RECENTLY PRACTICED
+                    </p>
+
+                    <h3>
+                        Search Algorithms
+                    </h3>
+
+                    <p>
+
+                        Practiced implementing linear and binary
+                        search and learned why binary search
+                        requires sorted data.
+
+                    </p>
+
+                </article>
+
+
+                <article class="learning-card">
+
+                    <span class="log-number">
+                        LOG_02
+                    </span>
+
+                    <p class="log-status">
+                        CURRENTLY BUILDING
+                    </p>
+
+                    <h3>
+                        Portfolio Website
+                    </h3>
+
+                    <p>
+
+                        Building a portfolio using plain HTML,
+                        CSS, and JavaScript while improving
+                        responsive design and interactivity.
+
+                    </p>
+
+                </article>
+
+
+                <article class="learning-card">
+
+                    <span class="log-number">
+                        LOG_03
+                    </span>
+
+                    <p class="log-status">
+                        NEXT GOAL
+                    </p>
+
+                    <h3>
+                        More Applications
+                    </h3>
+
+                    <p>
+
+                        Continue building projects involving
+                        databases, web applications, and
+                        programming logic.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="next-goal">
+
+                <div>
+
+                    <span>
+                        CURRENT OBJECTIVE
+                    </span>
+
+                    <strong>
+                        BUILD → TEST → LEARN → IMPROVE
+                    </strong>
+
+                </div>
+
+                <span class="objective-status">
+                    IN PROGRESS
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section
+            id="about"
+            class="section about-section">
+
+            <div class="about-grid">
+
+                <div>
+
+                    <p class="section-label">
+                        CHARACTER INFORMATION
+                    </p>
+
+                    <h2>
+                        About
+                        <span>Me.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <p class="about-lead">
+
+                        I'm a Computer Science student who enjoys
+                        learning by building things.
+
+                    </p>
+
+
+                    <p>
+
+                        I'm currently developing my skills in
+                        programming, web development, databases,
+                        and software development through school
+                        projects and personal practice.
+
+                    </p>
+
+
+                    <p>
+
+                        I'm still early in my journey, so this
+                        portfolio is also a way to document what
+                        I'm learning, what I've built, and the
+                        areas where I want to improve.
+
+                    </p>
+
+
+                    <div class="about-data">
+
+                        <div>
+
+                            <span>
+                                EDUCATION
+                            </span>
+
+                            <strong>
+                                Computer Science Student
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                CURRENT FOCUS
+                            </span>
+
+                            <strong>
+                                Programming & Web Development
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                STATUS
+                            </span>
+
+                            <strong class="green">
+                                ● CURRENTLY STUDYING
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CHATBOT
+        ================================================== -->
+
+        <section
+            id="chatbot"
+            class="section chatbot-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        SCENARIO #006 // INFORMATION SYSTEM
+                    </p>
+
+                    <h2>
+                        Ask The
+                        <span>System.</span>
+                    </h2>
+
+                </div>
+
+                <p class="section-description">
+
+                    Ask questions about my projects, skills,
+                    education, learning progress, or contact.
+
+                </p>
+
+            </div>
+
+
+            <div class="chatbot">
+
+                <div class="chat-header">
+
+                    <div>
+
+                        <span class="assistant-dot"></span>
+
+                        <strong>
+                            AKC_ASSISTANT
+                        </strong>
+
+                    </div>
+
+                    <span>
+                        ONLINE
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="chat-messages"
+                    id="chatMessages">
+
+                    <div class="message bot-message">
+
+                        [SYSTEM] Welcome. Ask me about
+                        Ashton, his projects, skills,
+                        education, or current learning.
+
+                    </div>
+
+                </div>
+
+
+                <div class="quick-questions">
+
+                    <button
+                        type="button"
+                        onclick="askQuestion('What projects have you built?')">
+
+                        PROJECTS
+
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="askQuestion('What are your skills?')">
+
+                        SKILLS
+
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="askQuestion('What are you learning?')">
+
+                        LEARNING
+
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="askQuestion('How can I contact you?')">
+
+                        CONTACT
+
+                    </button>
+
+                </div>
+
+
+                <div class="chat-input">
+
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Ask something..."
+                        autocomplete="off"
+                        onkeydown="handleEnter(event)">
+
+
+                    <button
+                        type="button"
+                        onclick="sendMessage()">
+
+                        SEND →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section
+            id="contact"
+            class="section contact-section">
+
+            <div class="contact-grid">
+
+                <div>
+
+                    <p class="section-label">
+                        FINAL SCENARIO // CONNECTION
+                    </p>
+
+                    <h2>
+                        Let's
+                        <span>Connect.</span>
+                    </h2>
+
+                    <p class="contact-description">
+
+                        Want to ask about a project, connect,
+                        or send feedback? You can reach me here.
+
+                    </p>
+
+
+                    <div class="email-box">
+
+                        <span>
+                            EMAIL
+                        </span>
+
+                        <a href="mailto:trivinolebron@gmail.com">
+
+                            trivinolebron@gmail.com
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="social-links">
+
+                        <a
+                            href="https://www.facebook.com/share/1LRCNjifaZ/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            FACEBOOK ↗
+
+                        </a>
+
+                        <a
+                            href="#"
+                            onclick="comingSoon(event)">
+
+                            GITHUB ↗
+
+                        </a>
+
+                        <a
+                            href="#"
+                            onclick="comingSoon(event)">
+
+                            LINKEDIN ↗
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <form
+                    class="contact-form"
+                    id="contactForm">
+
+                    <div class="form-title">
+
+                        <span>
+                            CONTACT_FORM
+                        </span>
+
+                        <span>
+                            READY
+                        </span>
+
+                    </div>
+
+
+                    <label for="name">
+                        NAME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        required
+                        placeholder="Your name">
+
+
+                    <label for="email">
+                        EMAIL
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        required
+                        placeholder="Your email">
+
+
+                    <label for="message">
+                        MESSAGE
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        required
+                        placeholder="Your message"></textarea>
 
 
                     <button
                         type="submit"
-                        class="primary-btn">
+                        class="btn primary-btn">
 
-                        TRANSMIT MESSAGE →
+                        SEND MESSAGE →
 
                     </button>
 
@@ -857,43 +1516,36 @@
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
 
-    <!-- =========================
+
+    <!-- =====================================================
          FOOTER
-    ========================== -->
+    ====================================================== -->
 
     <footer>
 
         <div class="footer-logo">
-            ✦ AKC
+            <span>✦</span> AKC
         </div>
 
         <p>
-            Exploring the universe of technology,
-            one line of code at a time.
-        </p>
-
-        <p class="copyright">
-            © 2026 Ashton Kniel T. Casillano.
-            All rights reserved.
+            COMPUTER SCIENCE STUDENT // BUILDING & LEARNING
         </p>
 
         <p>
-            THE SCENARIO CONTINUES...
+            © 2026 Ashton Kniel T. Casillano
         </p>
 
     </footer>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
